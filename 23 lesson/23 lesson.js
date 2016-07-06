@@ -57,7 +57,7 @@ var obj = {
         if (data == 'set') {
             n *= 2;
         } else {
-            n %= 3;
+            n /= 3;
         }
     }
 };

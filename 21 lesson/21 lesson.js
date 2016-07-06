@@ -13,10 +13,6 @@ prime_number:
 /*2 task
 В объекте есть свойство className, которое содержит список «классов» – слов, разделенных пробелом
 Создайте функцию addClass(obj, cls), которая добавляет в список класс cls, но только если его там еще нет*/
-var obj = {
-    className: 'open menu'
-};
-
 function addClass(obj, cls) {
     var classes = obj.className ? obj.className.split(' ') : [];
 
@@ -26,6 +22,10 @@ function addClass(obj, cls) {
     classes.push(cls);
     obj.className = classes.join(' ');
 }
+
+var obj = {
+    className: 'open menu'
+};
 
 addClass(obj, 'new');
 addClass(obj, 'open');
@@ -63,6 +63,11 @@ while (true) {
     if (value == "" || value == null || value == isNaN(value)) break;
     array.push(+value);
 }
+var sum = 0;
+for (var i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+alert(sum);
 
 /*5 task
 Напишите код который принимат от пользователя значение x (можно например через prompt) и выводит значение следующей формулы*/
